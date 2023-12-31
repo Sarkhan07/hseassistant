@@ -1,4 +1,59 @@
 .App-logo {
-  width: 120px;
-  height: 120px
+  width: 150px;
+  height: 150px;
+  margin-left: 60px;
+  margin-top: 5px;
+}
+
+.container {
+  margin-left: 10px;
+  // background-color: #95ff95;
+  background-color: #006c00;
+  border-radius: 7%;
+}
+
+.navbar-collapse {
+  margin-left: 10%;
+}
+
+
+.bg-body-tertiary {
+  background-color: #016a01d9 !important
+}
+
+.brand-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.navbar-nav .nav-item .nav-link,
+.nav-link,
+.navbar-nav .nav-item .nav-item.dropdown .nav-link:hover {
+  color: white;
+  font-weight: bold;
+}
+
+
+.nav-link:visited {
+  color: white !important;
+}
+
+
+.dropdown-menu {
+  background-color: #006c00;
+  border-color: white;
+  border-radius: 7%;
+}
+
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover {
+  background-color: transparent !important;
+  font-weight: bolder !important;
 }
