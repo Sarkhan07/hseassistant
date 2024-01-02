@@ -27,14 +27,13 @@ function Header() {
 
 
   return (
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-body-tertiary fixed-top">
       <Container>
         <Navbar.Brand href="/">
-        
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="brand-text">Əməyin mühafizəsinin idarəetməsində tərəfdaşınız</p>
-         </Navbar.Brand>
-       
+          <img src={logo} className="App-logo" alt="logo" />
+          <p className="brand-text">Əməyin mühafizəsinin idarəetməsində tərəfdaşınız</p>
+        </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />       
         <Navbar.Collapse id="basic-navbar-nav"  className="me-auto">
           <Nav>
             <div class="nav-item"><Nav.Link href="/" >Əsas səhifə</Nav.Link></div>
@@ -66,6 +65,9 @@ function Header() {
                 <NavDropdown.Item href="/system">
                   SƏTƏMM İdarəetmə Sisteminin qurulması
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/iso">
+                ISO 45001 standartlarına uyğun menecment sisteminin qurulması
+              </NavDropdown.Item>
                 <NavDropdown.Item href="/others">
                   Digər xidmətlər
                 </NavDropdown.Item>

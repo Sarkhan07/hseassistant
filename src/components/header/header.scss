@@ -2,17 +2,24 @@
   width: 150px;
   height: 150px;
   margin-top: 5px;
-  margin-left: 25%;
-}
-
-.container {
-  margin-left: 1em;
 }
 
 
 .bg-body-tertiary {
   background-color: rgb(49 199 49 / 85%) !important;
+
+  @media (max-width: 1368px) {
+    background-color: rgb(49 199 49 / 85%) !important;
+  }
 }
+
+.fixed-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
 
 .brand-text {
   font-family: 'Times New Roman', Times, serif;
@@ -22,6 +29,8 @@
   margin-top: 5px;
   color: white;
   margin-bottom: 0;
+  position: relative;
+  right: 5em;
 }
 
 .navbar-nav .nav-item .nav-link,
@@ -61,4 +70,128 @@
 
 .nav-item {
   margin-right: 41px;
+}
+
+@media (max-width: 1350px) {
+
+  .App-logo {
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+  }
+
+  .nav-item {
+    margin-right: 20px;
+  }
+
+  .brand-text {
+    font-size: 12px;
+  }
+
+  .navbar-nav .nav-item .nav-link,
+  .nav-link,
+  .navbar-nav .nav-item .nav-item.dropdown .nav-link:hover {
+    width: 110px;
+    font-size: 14px;
+  }
+
+
+  .dropdown-item {
+    font-size: 13px;
+  }
+
+}
+
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    background-color: rgb(49 199 49 / 85%) !important;
+  }
+
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+
+    .nav-item {
+      margin-right: 0;
+    }
+  }
+
+  .navbar-collapse {
+    background-color: rgb(49 199 49 / 85%) !important;
+    border-radius: 7%;
+    padding: 10px;
+  }
+
+  .nav-link {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    .nav-item {
+      margin: 0;
+    }
+  }
+
+  .App-logo {
+    width: 120px;
+    height: 120px;
+    margin-left: 8px;
+  }
+
+  .nav-item {
+    margin-right: 15px;
+  }
+
+  .brand-text {
+    right: 0;
+  }
+
+  .navbar-nav .nav-item .nav-link,
+  .nav-link,
+  .navbar-nav .nav-item .nav-item.dropdown .nav-link:hover {
+    width: 110px;
+    font-size: 12px;
+  }
+
+
+  .dropdown-item {
+    font-size: 11px;
+  }
+
+
+}
+
+
+@media (max-width: 680px) {
+  .navbar-brand {
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    margin-right: 0;
+  }
+
+  .navbar-collapse {
+    padding: 5px;
+  }
+
+  .App-logo {
+    width: 110px;
+    height: 110px;
+
+  }
+
+  .brand-text {
+    font-size: 8px;
+  }
+
 }
